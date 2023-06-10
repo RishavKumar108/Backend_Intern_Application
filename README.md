@@ -43,7 +43,7 @@ Technologies used in this Project:
 
 <h2>🧐 Login</h2>
 
-![Screenshot (481)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/6623c3d5-3ecc-4a84-9471-7d5b6560195d)
+![Screenshot (484)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/57f63533-3e83-450a-babc-b26a1c4bf5fc)
   </br></br>
   
   ![Screenshot (482)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/9c63c5d5-f9d5-4975-8395-e0179857f974)
