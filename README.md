@@ -5,6 +5,7 @@
 Here're some of the Project's best features:
 
 *   User and Admin authentication and validation using session Spring security/Web Token
+*   
 *   Customer can Register with two types of Role  by Customer or Admin 
 *   Admin can update customer.
 *   After Customer or admin  login then he will able to use all method
@@ -46,8 +47,10 @@ Technologies used in this Project:
   </br></br>
   
   ![Screenshot (482)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/9c63c5d5-f9d5-4975-8395-e0179857f974)
-
-
+  
+  <h2>🧐 Customer Find By Email</h2>
+  
+![Screenshot (483)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/226590d4-3268-4319-9d41-01bcadfdadd2)
 
 
 
