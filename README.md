@@ -33,5 +33,6 @@ Technologies used in this Project:
    ![Screenshot (477)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/db293f5b-cb9f-4994-b03f-6e0014de4d46)
 
 <h2>🧐 Register as an Customer</h2>
-![Screenshot (479)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/8e84cfb7-6c51-4cfc-aaec-7bdfc11cae61)
+
+![Screenshot (479)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/0759c9df-880c-4ec2-9d6e-93ba9b72bfbf)
 
