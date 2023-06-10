@@ -1,24 +1,22 @@
 # Backend_Intern_Application
 
-![Screenshot (477)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/db293f5b-cb9f-4994-b03f-6e0014de4d46)
-
 <h2>🧐 Features</h2>
 
-Here're some of the project's best features:
+Here're some of the Project's best features:
 
-*   User and Admin authentication and validation using session Spring security
-*   Admin can provide details like Bus Name Bus Route Bus Type –AC/non-AC seats departure time and arrival time
-*   Admin can provide details of route
-*   Admin can provide the confirmation of the seat to the User
-*   User can book ticket by selecting Source and destination
-*   User can give feedback for bus experience
-*   User can cancel reservation
+*   User and Admin authentication and validation using session Spring security/Web Token
+*   Customer can Register with two types of Role  by Customer or Admin 
+*   Admin can update customer.
+*   After Customer or admin  login then he will able to use all method
+*   Customer can find any customer by Id
+*   Customer can find any customer by Email
+*   Customer can find any customer by phone
 
   
   
 <h2>💻 Built with</h2>
 
-Technologies used in the project:
+Technologies used in this Project:
 <div  margin-right = "30px" align ="center" style="display: flex; justify-content: center ; justify-content: space-between;">
 
  <img src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png" height="55" width="52" alt="java"  />
@@ -33,9 +31,9 @@ Technologies used in the project:
 <img src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" height="55" width="52" alt="java"  />
 <img src="https://user-images.githubusercontent.com/25181517/192108892-6e9b5cdf-4e35-4a70-ad9a-801a93a07c1c.png" height="55" width="52" alt="java"  />
 <img src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" height="55" width="52" alt="java"  />
-
- 
   </div>
    </br></br>
+   
+   ![Screenshot (477)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/db293f5b-cb9f-4994-b03f-6e0014de4d46)
 
 
