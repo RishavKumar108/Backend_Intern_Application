@@ -8,12 +8,8 @@ Here're some of the Project's best features:
 *   Customer can Register with two types of Role  by Customer or Admin 
 *   Admin can update customer.
 *   After Customer or admin  login then he will able to use all method
-*   Customer can find any customer by Id
-*   Customer can find any customer by Email
-*   Customer can find any customer by phone
+*   Customer can find any customer by Id, Email,Phone
 
-  
-  
 <h2>💻 Built with</h2>
 
 Technologies used in this Project:
