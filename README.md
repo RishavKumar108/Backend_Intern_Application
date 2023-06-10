@@ -36,3 +36,18 @@ Technologies used in this Project:
 
 ![Screenshot (479)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/0759c9df-880c-4ec2-9d6e-93ba9b72bfbf)
 
+<h2>🧐 Register as an Admin</h2>
+
+![Screenshot (480)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/5b440a5b-bbf7-409e-b967-a9e49dcb2888)
+
+<h2>🧐 Login</h2>
+
+![Screenshot (481)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/6623c3d5-3ecc-4a84-9471-7d5b6560195d)
+  </br></br>
+  
+  ![Screenshot (482)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/9c63c5d5-f9d5-4975-8395-e0179857f974)
+
+
+
+
+
