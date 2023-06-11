@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.greenstitch.entity.Customer;
 import com.greenstitch.entity.Role;
@@ -67,14 +68,14 @@ public class CustomerServiceImpl implements CustomerService{
 	}
 
 	@Override
-	public Customer updateCustomerAsAdmin(Customer customer) {
+	public Customer updateCustomerAsAdmin( Long id) {
 		// TODO Auto-generated method stub
-		Customer cust = findByEmail(customer.getEmail());
+		Customer cust = findbyId(id);
 		if(cust != null) {
-			customer.setRole(Role.ROLE_ADMIN);
-			return customerRepository.save(customer);
+			cust.setRole(Role.ROLE_ADMIN);
+			return customerRepository.save(cust);
 		}else {
-			throw new CustomerNotFoundException("Customer is not register with this email : "+customer.getEmail());
+			throw new CustomerNotFoundException("Customer is not register with this id : "+id);
 		}
 	}
 

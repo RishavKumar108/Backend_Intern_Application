@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -28,40 +29,25 @@ public class AppConfig {
 	@Bean
 	 SecurityFilterChain springSecurityConfiguration(HttpSecurity http) throws Exception {
 
-//		http
-//		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-//		.and()
-//		.csrf().disable()
-//		.authorizeHttpRequests()
-//		.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**", "/webjars/**","/greenstitch/customers/register","/greenstitch/customers/register-admin","/login").permitAll()
-//		.requestMatchers( "/greenstitch/customers/update").hasRole("ADMIN")
-//		.requestMatchers( "/greenstitch/customers/email/{email}","/greenstitch/customers/phone/{phone}","/greenstitch/customers/{id}").hasAnyRole("ADMIN","CUSTOMER")		
-//		.anyRequest().authenticated().and()
-//		.addFilterAfter(new JwtTokenGeneratorFilter(), BasicAuthenticationFilter.class)
-//		.addFilterBefore(new JwtTokenValidatorFilter(), BasicAuthenticationFilter.class)
-//		.formLogin()
-//		.and()
-//		.httpBasic();
-		
-		
-		
+				
 		http.securityMatchers((matchers) -> matchers
 				.requestMatchers("*")
-			)
+			).authorizeHttpRequests((authorizeHttpRequests) ->
+		authorizeHttpRequests
+		.requestMatchers("/greenstitch/customers/update/{id}").hasRole("ADMIN")
+		.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**", "/webjars/**","/greenstitch/customers/register","/greenstitch/customers/register-admin","/login").permitAll()
+		.requestMatchers( "/greenstitch/customers/email/{email}","/greenstitch/customers/phone/{phone}","/greenstitch/customers/{id}").hasAnyRole("ADMIN","CUSTOMER")
+		.and()
+		.addFilterAfter(new JwtTokenGeneratorFilter(), BasicAuthenticationFilter.class)
+		.addFilterBefore(new JwtTokenValidatorFilter(), BasicAuthenticationFilter.class)
+	)
+		
 		.sessionManagement((sessionManagement) ->
 			sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 		)
 		.csrf((csrf) -> csrf.disable())
 		
-		.authorizeHttpRequests((authorizeHttpRequests) ->
-		authorizeHttpRequests
-		.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**", "/webjars/**","/greenstitch/customers/register","/greenstitch/customers/register-admin","/login").permitAll()
-		.requestMatchers( "/greenstitch/customers/update").hasRole("ADMIN")
-		.requestMatchers( "/greenstitch/customers/email/{email}","/greenstitch/customers/phone/{phone}","/greenstitch/customers/{id}").hasAnyRole("ADMIN","CUSTOMER")
-		.anyRequest().authenticated().and()
-		.addFilterAfter(new JwtTokenGeneratorFilter(), BasicAuthenticationFilter.class)
-		.addFilterBefore(new JwtTokenValidatorFilter(), BasicAuthenticationFilter.class)
-	).httpBasic();
+		.httpBasic();
 
 		return http.build();
 	}

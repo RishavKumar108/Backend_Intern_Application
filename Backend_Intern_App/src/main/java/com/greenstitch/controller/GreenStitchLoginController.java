@@ -21,6 +21,7 @@ public class GreenStitchLoginController {
 	
 	    @GetMapping("/login")
 	    public ResponseEntity<Customer> loginCustomerHandler( Authentication auth) {
+	    	System.out.println(auth);
 	        Customer cust  = customerService.findByEmail(auth.getName());
 	        return new ResponseEntity<>(cust,HttpStatus.OK);
 	    }

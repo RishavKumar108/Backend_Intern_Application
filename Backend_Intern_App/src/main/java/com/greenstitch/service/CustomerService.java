@@ -1,5 +1,7 @@
 package com.greenstitch.service;
 
+
+
 import com.greenstitch.entity.Customer;
 
 public interface CustomerService {
@@ -8,7 +10,7 @@ public interface CustomerService {
 	
 	public Customer registerAdmin(Customer customer);
 	
-	public Customer updateCustomerAsAdmin(Customer customer);
+	public Customer updateCustomerAsAdmin( Long id);
 	
 	public Customer findByEmail(String email);
 	
