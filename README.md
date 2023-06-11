@@ -51,5 +51,10 @@ Technologies used in this Project:
   
 ![Screenshot (483)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/226590d4-3268-4319-9d41-01bcadfdadd2)
 
+ <h2>🧐 Database </h2>
+ 
+ ![Screenshot (485)](https://github.com/RishavKumar108/Backend_Intern_Application/assets/105916425/538d9d8d-84ab-4db0-a743-eaa2d03e8a5b)
+
+
 
 
