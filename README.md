@@ -5,7 +5,6 @@
 Here're some of the Project's best features:
 
 *   User and Admin authentication and validation using session Spring security/Web Token
-*   
 *   Customer can Register with two types of Role  by Customer or Admin 
 *   Admin can update customer.
 *   After Customer or admin  login then he will able to use all method
