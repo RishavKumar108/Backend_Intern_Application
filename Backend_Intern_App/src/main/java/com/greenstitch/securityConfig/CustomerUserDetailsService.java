@@ -42,16 +42,8 @@ public class CustomerUserDetailsService implements UserDetailsService{
 			
 			return new User(customer.getEmail(), customer.getPassword(), authorities);
 			
-			
-			
-			
 		}else
-			throw new BadCredentialsException("User Details not found with this username: "+username);
-		
-		
-		
-		
-		
+			throw new BadCredentialsException("User Details not found with this username: "+username);	
 	}
 
 }

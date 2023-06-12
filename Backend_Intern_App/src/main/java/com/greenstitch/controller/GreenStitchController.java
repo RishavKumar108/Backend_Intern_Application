@@ -55,7 +55,6 @@ public class GreenStitchController {
     }
 
     @PutMapping("/update/{id}")
-  //  @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Customer> updateCustomerAsAdmin(@PathVariable Long id) {
         Customer updatedCustomer = customerService.updateCustomerAsAdmin(id);
         return new ResponseEntity<>(updatedCustomer,HttpStatus.OK);
